@@ -1,0 +1,48 @@
+.collection-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.3s;
+  }
+  
+  .collection-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .collection-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .collection-name {
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  .collection-description {
+    color: #666;
+  }
+  
+  .collection-price {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .collection-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .collection-button:hover {
+    background-color: #0056b3;
+  }
+  

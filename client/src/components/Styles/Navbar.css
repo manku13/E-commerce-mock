@@ -1,0 +1,109 @@
+.navbar {
+  background-color: #007bff; /* Navbar background color */
+  padding: 10px 20px; /* Padding for navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Space between logo and menu */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Full width */
+}
+
+.navbar-logo {
+  color: white; /* Logo color */
+  font-size: 1.8rem; /* Logo font size */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text */
+}
+
+.navbar-search-form {
+  display: flex; /* Flexbox for search form */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-search-input {
+  padding: 8px; /* Padding for input */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  width: 250px; /* Width of search input */
+}
+
+.navbar-search-button {
+  padding: 8px 12px; /* Padding for button */
+  background-color: #ffc107; /* Button color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  color: white; /* Button text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-left: 5px; /* Space between input and button */
+}
+
+.navbar-search-button:hover {
+  background-color: #e0a800; /* Darker button color on hover */
+}
+
+.navbar-menu {
+  list-style: none; /* Remove default list style */
+  display: flex; /* Flexbox for horizontal menu */
+  gap: 20px; /* Space between menu items */
+    margin: 0px; /* Remove default margin */
+    padding-right: 80px;
+}
+
+.navbar-item {
+  color: white; /* Item text color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar-item:hover {
+  color: #ffc107; /* Change color on hover */
+}
+
+.navbar-dropdown {
+  position: relative; /* Position relative for dropdown */
+}
+
+.dropdown-menu {
+  display: none; /* Hide dropdown by default */
+  position: absolute; /* Positioning for dropdown items */
+  background-color: #007bff; /* Background color for dropdown */
+  margin-top: 10px; /* Space above dropdown */
+  padding: 10px; /* Padding for dropdown */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
+  z-index: 1000; /* Ensure dropdown is above other content */
+}
+
+.navbar-dropdown:hover .dropdown-menu {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown-item {
+  color: white; /* Dropdown item text color */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Block display for dropdown items */
+  margin: 5px 0; /* Space between dropdown items */
+  padding: 5px 10px; /* Padding for dropdown items */
+  border-radius: 3px; /* Rounded corners for items */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Highlight on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column; /* Stack menu items vertically on small screens */
+  }
+
+  .navbar-search-input {
+    width: 150px; /* Reduce width of search input on small screens */
+  }
+}
